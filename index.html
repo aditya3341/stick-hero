@@ -6,6 +6,12 @@
     <link rel="manifest" href="manifest.json">
     <title>Stick Hero</title>
     <style>
+      <script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js')
+    .then(() => console.log('Service Worker Registered'));
+}
+</script>
       html,
       body {
         height: 100%;
